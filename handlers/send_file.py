@@ -13,7 +13,7 @@ async def ReplyForward(message: Message, file_id: int):
         await message.reply_text(
             f"**🔺لینک  اشتراک گذاری این فایل 👇**\n"
             f"https://t.me/{Config.BOT_USERNAME}?start=SeriesPlus1_{str_to_b64(str(file_id))}\n\n"
-            f"__• برای دریافت فایل روی لینک کلیک کنید👆__\n‌**⚠️⁩ این لینک تا 7 روز معتبر می باشد.**",
+            f"__• برای دریافت فایل روی لینک کلیک کنید👆__",
             disable_web_page_preview=True, quote=True)
     except FloodWait as e:
         await asyncio.sleep(e.x)
