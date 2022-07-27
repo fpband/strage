@@ -52,9 +52,7 @@ async def SaveBatchMediaInChannel(bot: Client, editable: Message, message_ids: l
             f"Just Click the link to get your files!",
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("بازکردن لینک", url=share_link)],
-                 [InlineKeyboardButton("کانال پشتیبانی", url="https://t.me/SeriesPlus1"),
-                  InlineKeyboardButton("گروه پشتیبانی", url="https://t.me/dlchinhub")]]
+                [[InlineKeyboardButton("بازکردن لینک", url=share_link)]]
             ),
             disable_web_page_preview=True
         )
