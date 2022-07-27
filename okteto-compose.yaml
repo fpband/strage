@@ -6,9 +6,9 @@ services:
       - API_ID=${API_ID}
       - API_HASH=${API_HASH}
       - BOT_TOKEN=${BOT_TOKEN}
-      - API_ID=${API_ID}
-      - API_HASH=${API_HASH}
-      - BOT_TOKEN=${BOT_TOKEN}
-      - API_ID=${API_ID}
-      - API_HASH=${API_HASH}
-      - BOT_TOKEN=${BOT_TOKEN}
+      - BOT_USERNAME=${BOT_USERNAME}
+      - DB_CHANNEL=${DB_CHANNEL}
+      - BOT_OWNER=${BOT_OWNER}
+      - DATABASE_URL=${DATABASE_URL}
+      - UPDATES_CHANNEL=${UPDATES_CHANNEL}
+      - LOG_CHANNEL=${LOG_CHANNEL}
