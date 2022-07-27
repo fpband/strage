@@ -46,9 +46,13 @@ async def start(bot: Client, cmd: Message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                   
                     [
-                        InlineKeyboardButton("راهنمای دریافت فایل", callback_data="aboutdevs")
+                        InlineKeyboardButton("گروه پشتیبانی", url="https://t.me/dlchinhub"),
+                        InlineKeyboardButton("کانال پشتیبانی", url="https://t.me/SeriesPlus1")
+                    ],
+                    [
+                        InlineKeyboardButton("درباره ربات", callback_data="aboutbot"),
+                        InlineKeyboardButton("راهنما", callback_data="aboutdevs")
                     ]
                 ]
             )
@@ -68,7 +72,7 @@ async def start(bot: Client, cmd: Message):
             for i in range(len(message_ids)):
                 await SendMediaAndReply(bot, user_id=cmd.from_user.id, file_id=int(message_ids[i]))
         except Exception as err:
-            await cmd.reply_text(f"⚠️ لینک ارسالی معتبر نمی باشد‌\n\n**Error:** `{err}`")
+            await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
 
 
 @Bot.on_message((filters.document | filters.video | filters.audio) & ~filters.edited & ~filters.chat(Config.DB_CHANNEL))
@@ -84,7 +88,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support-Admin](https://t.me/FarshidBand)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/DevsZone)",
                                      disable_web_page_preview=True)
             return
 
@@ -147,7 +151,7 @@ async def broadcast_handler_open(_, m: Message):
 @Bot.on_message(filters.private & filters.command("status") & filters.user(Config.BOT_OWNER))
 async def sts(_, m: Message):
     total_users = await db.total_users_count()
-    await m.reply_text(text=f"**• تعداد کاربرای ربات :** `{total_users}`", parse_mode="Markdown", quote=True)
+    await m.reply_text(text=f"**Total Users in DB:** `{total_users}`", parse_mode="Markdown", quote=True)
 
 
 @Bot.on_message(filters.private & filters.command("ban_user") & filters.user(Config.BOT_OWNER))
@@ -290,8 +294,9 @@ async def button(bot: Client, cmd: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [                   
-                    [                   
-                        InlineKeyboardButton("بازگشت", callback_data="gotohome")
+                    [
+                        InlineKeyboardButton("درباره ربات", callback_data="aboutbot"),
+                        InlineKeyboardButton("خانه", callback_data="gotohome")
                     ]
                 ]
             )
@@ -305,7 +310,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("راهنمای دریافت فایل", callback_data="aboutdevs")
+                        InlineKeyboardButton("گروه پشتیبانی", url="https://t.me/dlchinhub"),
+                        InlineKeyboardButton("کانال پشتیبانی", url="https://t.me/SeriesPlus1")
+                    ],
+                    [
+                        InlineKeyboardButton("درباره ربات", callback_data="aboutbot"),
+                        InlineKeyboardButton("راهنما", callback_data="aboutdevs")
                     ]
                 ]
             )
@@ -352,9 +362,14 @@ async def button(bot: Client, cmd: CallbackQuery):
             parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [                  
-                    [                     
-                        InlineKeyboardButton("راهنمای دریافت فایل", callback_data="aboutdevs")
+                [
+                    [
+                        InlineKeyboardButton("گروه پشتیبانی", url="https://t.me/dlchinhub"),
+                        InlineKeyboardButton("کانال پشتیبانی", url="https://t.me/SeriesPlus1")
+                    ],
+                    [
+                        InlineKeyboardButton("درباره ربات", callback_data="aboutbot"),
+                        InlineKeyboardButton("راهنما", callback_data="aboutdevs")
                     ]
                 ]
             )
