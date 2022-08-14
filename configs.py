@@ -25,7 +25,7 @@ class Config(object):
 
 👥 **گروه پشتیبانی :** [Group](https://t.me/dlchinhub)
 
-📢 **کانال پشتیبانی :** [Channel](https://t.me/SeriesPlus1)
+📢 **کانال پشتیبانی :** [Channel](https://t.me/irbotz)
 """
 	ABOUT_DEV_TEXT = f"""
 ابتدا در کانال خواسته شده عضو شوید‌.
