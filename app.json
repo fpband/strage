@@ -1,15 +1,16 @@
 {
-    "name": "Telegram Files Store Bot",
-    "description": "A Telegram Files Store Bot in Pyrogram by @AbirHasan2005",
+    "name": "File Store Bot",
+    "description": "A Telegram Files Store Bot to protect your Files in Pyrogram by @TheTeleRoid",
     "keywords": [
         "telegram",
         "files",
         "store",
         "bot"
     ],
-    "repository": "https://github.com/fpband/PyroFilesStoreBot0002",
-    "website": "https://telegram.dog/fpband",
-    "success_url": "https://t.me/irbotz",
+    "repository": "https://github.com/PredatorHackerzZ/TG-FileStore",
+    "website": "https://telegram.dog/PredatorHackerzZ",
+    "success_url": "https://t.me/TeleRoidGroup",
+    "logo": "https://telegra.ph/file/b39906f572822b3ab82c8.jpg",
     "env": {
          "API_id": {
             "description": "Api id telegram",
@@ -24,17 +25,17 @@
          "BOT_TOKEN": {
             "description": "bot telegram token",
             "required": false,
-            "value": "5171401480:AAHZeGf1A575B6tSDMTlWa03rmaXKteoD1I"
+            "value": "1943275919:AAFwSScrlR_i-AzdNTOiw8EEctbU_exOaGg"
         },
          "BOT_USERNAME": {
             "description": "username bot",
             "required": false,
-            "value": "ir_StorageFileBot"
+            "value": "ir_uploadBot"
         },
          "DB_CHANNEL": {
             "description": "log channel id",
             "required": false,
-            "value": "-1001708811948"
+            "value": "-1001787336960"
         },
          "BOT_OWNER": {
             "description": "owner id -256",
@@ -49,12 +50,12 @@
          "UPDATES_CHANNEL": {
             "description": "update channel username",
             "required": false,
-            "value": "SeriesPlus1"
+            "value": "ir_botz"
         },
          "LOG_CHANNEL": {
             "description": "log channel id -467",
             "required": false,
-            "value": "-1001708811948"
+            "value": "-1001787336960"
         },
         "BANNED_USERS": {
             "description": "Banned unwanted members",
